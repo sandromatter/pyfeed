@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <!-- HTML Head -->
+  {% include "/templates/partials/_head.html" %}
+  
+  <body>
+    
+    <!-- Navigation -->
+    {% include "/templates/components/_nav.html" %}
+
+    <!-- Main -->
+    <main>
+      <article>
+      {% block content %}
+      {% endblock %}
+      </article>
+    </main>
+
+    <!-- Footer -->
+    {% include "/templates/components/_footer.html" %}
+   
+    <!-- Additional Scripts -->
+    {% include "/templates/partials/_scripts.html" %}
+   
+  </body>
+
+</html>
