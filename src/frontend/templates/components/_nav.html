@@ -1,5 +1,10 @@
 <header id="header">    
     <nav id="nav-bar" class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">Navbar</a>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('submit_feed') }}">Submit feed URL</a></li>
+            <li><a href="{{ url_for('optimize_feed') }}">Optimize feed</a></li>
+        </ul>
     </nav>
 </header>
