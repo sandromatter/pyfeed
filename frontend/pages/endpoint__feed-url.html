@@ -1,0 +1,19 @@
+{% extends "/templates/main.html" %}
+
+{% block content %}
+
+<div class="row h-100 mt-5">
+  
+  <!-- Content here -->
+  <div class="col-8">
+    <h1 class="display-1 mb-3">{{title}}</h1>
+    <p class="lead mb-4">{{description}}</p>
+    <form action="{{ url_for('optimize_feed') }}" method="POST">
+        <input class="form-control mb-4" type="text" name="custom_url" value="" placeholder="Please enter the complete URL (including https://...) of your RSS feed to optimize."/>
+        <input class="btn btn-primary btn-lg" type="submit" value="Submit URL" />
+    </form>
+  </div>
+
+</div>
+
+{% endblock %}

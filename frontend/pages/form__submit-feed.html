@@ -1,0 +1,23 @@
+{% extends "/templates/main.html" %}
+
+{% block content %}
+
+{% for category, message in get_flashed_messages(with_categories=True) %}
+    <div class="alert alert-{{ category }} col-lg-8 col-md-12" role="alert">{{ message }}</div>
+{% endfor %}
+
+<div class="row h-100 mt-5">
+  
+  <!-- Content here -->
+  <div class="col-lg-8 col-md-12">
+    <h1 class="display-1 mb-3">{{title}}</h1>
+    <p class="lead mb-4">{{description}}</p>
+    <form action="{{ url_for('submit_feed') }}" method="POST">
+        <input class="form-control mb-4" type="url" name="source_feedurl" value="" placeholder="Please enter the complete URL (including https://...) of your RSS feed to optimize."/>
+        <input class="btn btn-primary btn-lg" type="submit" value="Submit URL" />
+    </form>
+  </div>
+
+</div>
+
+{% endblock %}
