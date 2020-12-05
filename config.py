@@ -2,12 +2,12 @@
 # 
 # config.py
 # 
-#---------------------------------------------------------------------------------------
-# Import packages
-#---------------------------------------------------------------------------------------
 # Source, working with .env in Flask:
 # https://prettyprinted.com/tutorials/automatically_load_environment_variables_in_flask
 # https://realpython.com/flask-by-example-part-1-project-setup/
+#---------------------------------------------------------------------------------------
+# Import packages
+#---------------------------------------------------------------------------------------
 
 import os
 
