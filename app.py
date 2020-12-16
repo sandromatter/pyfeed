@@ -123,7 +123,7 @@ def optimize_feed():
 
 
 # Form enter custom URL
-@app.route("/get-endpoint-url")
+@app.route("/endpoint-url")
 def get_endpoint_url():
     if session[session_property_url_submitted] and session[session_property_feed_optimized]:
         return render_template(page_path_get_endpoint_url, title="Get URL", description="Get your endpoint URL of your customized feed.")
@@ -133,8 +133,8 @@ def get_endpoint_url():
         return redirect(url_for(app_function_submit_feed))
 
 
-@app.route("/<xml_filename>")
-def xml_endpoint_url(xml_filename):
+@app.route("/endpoint-url/<xml_filename>")
+def xml_file_endpoint_url(xml_filename):
     xml_filename = session[session_property_xml_filename]
     file_path_xml_file = "backend/xml/"      
     return send_from_directory(file_path_xml_file, xml_filename, mimetype="text/xml")

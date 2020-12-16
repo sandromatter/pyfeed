@@ -46,7 +46,7 @@ def check_feedurl_invalid(url):
         return True
 
 
-# Save feed URL and endpoint URL to JSON object
+# Save feed URL and endpoint URL to JSON object, accessed from
 # https://github.com/fabod/pro2/blob/master/demo_snippets/10_Persistente_Daten/
 def save_json(key, value):
     try:
@@ -75,7 +75,7 @@ def load_json():
 def save_xml(url):
     req = requests.get(url)
     timestr = time.strftime("%Y-%m-%d-%H%M%S")
-    xml_filename = "endpoint-url-" + timestr + ".xml"
+    xml_filename = timestr + ".xml"
     file_path_xml_file = "backend/xml/"
     file_path_xml_file = file_path_xml_file + xml_filename
     if req.status_code == 200:

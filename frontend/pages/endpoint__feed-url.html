@@ -8,7 +8,8 @@
   <div class="col-8">
     <h1 class="display-1 mb-3">{{title}}</h1>
     <p class="lead mb-4">{{description}}</p>
-    <button type="button" class="btn btn-primary btn-lg mt-2" onclick="window.location.href='{{ url_for('xml_endpoint_url', xml_filename='xml_filename') }}';">Take me to my endpoint URL</button>
+    <pre><code>http://127.0.0.1:5000/endpoint-url/{{session["session_property_xml_filename"]}}</code></pre>
+    <button type="button" class="btn btn-primary btn-lg mt-2" id=xml_redirect onclick="replaceUrl()">Take me to my endpoint URL</button>
   </div>
 
 </div>
