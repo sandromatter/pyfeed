@@ -91,7 +91,8 @@ def submit_feed():
             feedurl = session[session_property_feedurl]
             xml_filename = feedburner.save_xml(feedurl)
             session[session_property_xml_filename] = xml_filename
-            feedburner.save_json(feedurl, xml_filename)
+            stripped_feedurl = feedburner.remove_www_feedurl(feedurl)
+            feedburner.save_json(stripped_feedurl, xml_filename)
             url_submitted = True
             session[session_property_url_submitted] = url_submitted
             return redirect(url_for(app_function_optimize_feed))
@@ -111,7 +112,13 @@ def optimize_feed():
             return render_template("/pages/form__optimize-feed.html", title="Optimize", description="Choose which optimization you'd like to do on your URL.")
         # Therefore request method must be post
         else:
-            feedburner.optimize_xml_file()
+            feed_title = request.form["input_title"]
+            feed_description = request.form["input_description"]
+            feed_analytics_ua = request.form["input_analytics_ua"]
+            feed_accentColor = request.form["input_accentColor"]
+            feed_icon = request.form["input_icon"]
+
+            feedburner.optimize_xml_file(feed_title, feed_description, feed_analytics_ua, feed_accentColor, feed_icon)
             feed_optimized = True
             session[session_property_feed_optimized] = feed_optimized
             return redirect(url_for("get_endpoint_url"))

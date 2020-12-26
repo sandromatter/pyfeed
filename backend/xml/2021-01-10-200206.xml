@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
+  <channel>
+    <webfeeds:icon xmlns:webfeeds="http://webfeeds.org/rss/1.0">{XXXXXXXXXXXXXXXXXX}</webfeeds:icon>
+    <webfeeds:accentColor xmlns:webfeeds="http://webfeeds.org/rss/1.0">{XXXXXXXXXXXXXXXXXX}</webfeeds:accentColor>
+    <webfeeds:analytics xmlns:webfeeds="http://webfeeds.org/rss/1.0" id="UA-XXXXXX" engine="GoogleAnalytics"/>
+    <webfeeds:related xmlns:webfeeds="http://webfeeds.org/rss/1.0" layout="card" target="browser"/>
+    <title>{XXXXXXXXXXXXXXXXXX}</title>
+    <atom:link href="{XXXXXXXXXXXXXXXXXX}" rel="self" type="application/rss+xml"/>
+    <link>https://www.businessinsider.de</link>
+    <description>{XXXXXXXXXXXXXXXXXX}</description>
+    <lastBuildDate>Sun, 10 Jan 2021 16:50:30 +0000</lastBuildDate>
+    <language>de-DE</language>
+    <sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+    <sy:updateFrequency>
+	1	</sy:updateFrequency>
+    <item>
+      <title>18 Millionen Euro für die Hype-Trinkflaschen von Air Up</title>
+      <link>https://www.businessinsider.de/gruenderszene/food/air-up-18-millionen-pepsico/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=air-up-18-millionen-pepsico</link>
+      <dc:creator>Daniel Hüfner</dc:creator>
+      <pubDate>Sun, 10 Jan 2021 16:28:10 +0000</pubDate>
+      <category>Food</category>
+      <category>Frank Thelen</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1924516</guid>
+      <description>Die Trinkflaschen von Air Up haben einen prominenten Neu-Investor überzeugt. Auch werden erstmals Umsatzzahlen kommuniziert.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/air-up-800x533.jpeg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Hört euch an, wieso Bringoo das neue Gorillas werden könnte</title>
+      <link>https://www.businessinsider.de/gruenderszene/food/audiostory-bringoo-lieferdienst/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=audiostory-bringoo-lieferdienst</link>
+      <dc:creator>Lisa Ksienrzyk</dc:creator>
+      <pubDate>Sun, 10 Jan 2021 15:15:00 +0000</pubDate>
+      <category>Food</category>
+      <category>Gründerszene</category>
+      <category>Gründerszene Plus</category>
+      <category>Audio Stories</category>
+      <category>Food Trends</category>
+      <category>Lieferdienst</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1920883</guid>
+      <description>In Dubai baute Hasib Khan einen Carsharing-Dienst auf, der 27 Millionen Euro wert war. Nun versucht er es mit seinem Lieferdienst Bringoo.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/audiostory_bringoo-800x534.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Guckt euch das witzigste Pitchdeck des Jahres an</title>
+      <link>https://www.businessinsider.de/gruenderszene/perspektive/pony-das-witzigste-pitchdeck-des-jahres/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=pony-das-witzigste-pitchdeck-des-jahres</link>
+      <dc:creator>Georg Räth</dc:creator>
+      <pubDate>Fri, 08 Jan 2021 13:00:00 +0000</pubDate>
+      <category>Gründerszene</category>
+      <category>Perspektive</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1898490</guid>
+      <description>Auf 76 Seiten trollt diese Präsentation die wichtigsten Startup-Trends und Szeneköpfe. Gründer werden dabei genauso auf die Schippe genommen wie Investoren.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/12/0038-800x450.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Mitarbeiterzufriedenheit: Mit diesen 7 Tipps klappt’s!</title>
+      <link>https://www.businessinsider.de/gruenderszene/gs-connect/salesforce/7-tipps-fuer-mitarbeiterzufriedenheit-salesforce-2020-12434/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=7-tipps-fuer-mitarbeiterzufriedenheit-salesforce-2020-12434</link>
+      <comments>https://www.businessinsider.de/gruenderszene/gs-connect/salesforce/7-tipps-fuer-mitarbeiterzufriedenheit-salesforce-2020-12434/#respond</comments>
+      <dc:creator>gruenderszene</dc:creator>
+      <pubDate>Fri, 08 Jan 2021 11:00:00 +0000</pubDate>
+      <category>Anzeige</category>
+      <category>Gründerszene</category>
+      <category>GS Connect</category>
+      <category>Salesforce</category>
+      <category>Sponsored Post</category>
+      <category>sponsored</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1855121</guid>
+      <description>KPIs gut, alles gut? Nicht ganz, denn Startups vernachlässigen oft etwas Entscheidendes: wie es dem Team geht. Warum das so gefährlich ist – und was hilft. Anzeige</description>
+      <wfw:commentRss>https://www.businessinsider.de/gruenderszene/gs-connect/salesforce/7-tipps-fuer-mitarbeiterzufriedenheit-salesforce-2020-12434/feed/</wfw:commentRss>
+      <slash:comments>0</slash:comments>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/11/salesforce_mitarbeiterzufriedenheit_artikelbild-800x534.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Ex-Metro-Chef Olaf Koch wird Startup-Investor</title>
+      <link>https://www.businessinsider.de/gruenderszene/business/ex-metro-chef-olaf-koch-wird-startup-investor-2021-1-copy/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=ex-metro-chef-olaf-koch-wird-startup-investor-2021-1-copy</link>
+      <dc:creator>Solveig Rathenow</dc:creator>
+      <pubDate>Fri, 08 Jan 2021 10:32:44 +0000</pubDate>
+      <category>Business</category>
+      <category>Food</category>
+      <category>handel</category>
+      <category>Startup Investment</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1920910</guid>
+      <description>Kochs neu gegründete Strategie- und Investmentberatung Monrepos Advisers soll nichts mit dem Großhandel oder der Gastronomie zu tun haben.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/GettyImages-1052346548-1-800x534.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Shop Apotheke kauft Medikamenten-App Smartpatient</title>
+      <link>https://www.businessinsider.de/gruenderszene/news/shop-apotheke-kauft-smartpatient/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=shop-apotheke-kauft-smartpatient</link>
+      <dc:creator>GS Timo Brücken</dc:creator>
+      <pubDate>Fri, 08 Jan 2021 09:37:02 +0000</pubDate>
+      <category>News</category>
+      <category>Apps</category>
+      <category>E-Commerce</category>
+      <category>Health / Gesundheit</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1920739</guid>
+      <description>Der deutsch-niederländische Arzneimittel-Onlinehändler Shop Apotheke übernimmt den Gesunheits-App-Anbieter Smartpatient aus München.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/shop_apotheke_europe-logistics-03-800x1200.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Health-Startup Recare sammelt zwei Millionen ein</title>
+      <link>https://www.businessinsider.de/gruenderszene/news/health-startup-recare-sammelt-zwei-millionen-ein/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=health-startup-recare-sammelt-zwei-millionen-ein</link>
+      <dc:creator>Marco Weimer</dc:creator>
+      <pubDate>Fri, 08 Jan 2021 09:36:27 +0000</pubDate>
+      <category>News</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1920627</guid>
+      <description>&lt;p&gt;Das Berliner Startup Recare hat eine Finanzierungsrunde abgeschlossen. Zwei Millionen Euro kommen führend durch den Fonds Die BrückenKöpfeX zusammen. Darüber hinaus investieren unter anderem aus dem bereits bestehenden Gesellschafterkreis der Thieme Verlag sowie die Business Angel Niklas Östberg (Delivery Hero) und Oliver Pabst. Mit dem Geld soll der deutsche und französische Markt weiter ausgebaut werden. [&amp;hellip;]&lt;/p&gt;
+</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/11/recare-team-800x534.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Kanadischer Fonds übernimmt Mehrheit an Thermondo</title>
+      <link>https://www.businessinsider.de/gruenderszene/business/heizungs-startup-thermondo-neuer-mehrheitseigner-brookfield/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=heizungs-startup-thermondo-neuer-mehrheitseigner-brookfield</link>
+      <dc:creator>Sarah Heuberger</dc:creator>
+      <pubDate>Fri, 08 Jan 2021 09:29:36 +0000</pubDate>
+      <category>Business</category>
+      <category>Immobilien</category>
+      <category>Investment</category>
+      <category>Nachhaltigkeit</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1920678</guid>
+      <description>Die Private-Equity-Firma Brookfield übernimmt 51 Prozent an dem Heizungs-Startup Thermondo. Ein „Ritterschlag“ für die Berliner Firma.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/11/philipp-pausder-thermondo-by-chris-marxen-2_1220x814_oc-800x534.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Getnow, Hellofresh, Too Good To Go – das sind die Food-News der Woche</title>
+      <link>https://www.businessinsider.de/gruenderszene/food/food-newsletter-2021-01-08/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=food-newsletter-2021-01-08</link>
+      <comments>https://www.businessinsider.de/gruenderszene/food/food-newsletter-2021-01-08/#respond</comments>
+      <dc:creator>Lisa Ksienrzyk</dc:creator>
+      <pubDate>Fri, 08 Jan 2021 07:30:00 +0000</pubDate>
+      <category>Food</category>
+      <category>Gründerszene</category>
+      <category>Essen</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1918840</guid>
+      <description>Die Getnow-Rettung in letzter Sekunde, hohe Finanzspritzen zum Jahresstart und eine überraschende Expansion.</description>
+      <wfw:commentRss>https://www.businessinsider.de/gruenderszene/food/food-newsletter-2021-01-08/feed/</wfw:commentRss>
+      <slash:comments>0</slash:comments>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/11/hello-fresh-hellofresh-marketing-new-york-800x534.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Gesundheits-Startups wachsen in der Pandemie rasant – so geht’s 2021 weiter</title>
+      <link>https://www.businessinsider.de/gruenderszene/health/gesundheits-startups-wachsen-in-corona-pandemie-rasant-so-gehts-2021-weiter/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=gesundheits-startups-wachsen-in-corona-pandemie-rasant-so-gehts-2021-weiter</link>
+      <dc:creator>Jürgen Stüber</dc:creator>
+      <pubDate>Fri, 08 Jan 2021 07:30:00 +0000</pubDate>
+      <category>Gründerszene</category>
+      <category>Health</category>
+      <category>Perspektive</category>
+      <category>App auf Rezept</category>
+      <category>Digitalwirtschaft</category>
+      <category>Gesundheit</category>
+      <category>Health / Gesundheit</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1918908</guid>
+      <description>Die digitale Gesundheitswirtschaft gehört zu den Gewinnern der Corona-Pandemie. Auch 2021 wird sich dieser Trend fortsetzen. Fünf Trends.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/TeleClinic_CEO_KatharinaJuenger-800x534.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Vom Milliarden-Startup zum Corona-Absteiger: Die große Getyourguide-Chronik</title>
+      <link>https://www.businessinsider.de/gruenderszene/getyourguide-vom-milliarden-startup-zum-corona-absteiger-r/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=getyourguide-vom-milliarden-startup-zum-corona-absteiger-r</link>
+      <dc:creator>Georg Räth</dc:creator>
+      <pubDate>Fri, 08 Jan 2021 05:00:00 +0000</pubDate>
+      <category>Gründerszene</category>
+      <category>Chronik</category>
+      <category>GetYourGuide</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1917792</guid>
+      <description>&lt;p&gt;Getyourguide startete beschaulich in einer Studenten-WG und wuchs in den vergangenen Jahren zum milliardenschweren Einhorn. Doch 2020 sackte der Umsatz wegen der Corona-Krise zwischenzeitlich auf Null ab und das Berliner Unternehmen, das Veranstaltungen und Aktivitäten von professionellen Anbietern verkauft, entließ ein Sechstel der Belegschaft. Jetzt hofft die Firma von Johannes Reck und Tao Tao auf [&amp;hellip;]&lt;/p&gt;
+</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/ezgif.com-webp-to-jpg-800x533.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Twitter hebt Sperre auf,  Facebook und Instagram blockieren Trump weiter</title>
+      <link>https://www.businessinsider.de/gruenderszene/business/trump-bleibt-bei-facebook-und-instagram-gesperrt/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=trump-bleibt-bei-facebook-und-instagram-gesperrt</link>
+      <dc:creator>Sabrina Frangos</dc:creator>
+      <pubDate>Fri, 08 Jan 2021 04:55:00 +0000</pubDate>
+      <category>Business</category>
+      <category>Gründerszene</category>
+      <category>Technologie</category>
+      <category>Bitcoin</category>
+      <category>Donald Trump</category>
+      <category>Facebook</category>
+      <category>Fintech</category>
+      <category>Kryptowährung</category>
+      <category>Paypal</category>
+      <category>Startup</category>
+      <category>Twitter</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1920377</guid>
+      <description>Mark Zuckerberg machte klar, dass Trumps Konten bei Facebook und Instagram bis zur Machtübergabe an Joe Biden blockiert bleiben. Außerdem: Baidu will Elektrofahrzeuge herstellen lassen und Sofi will an die Börse.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/11/GettyImages-669889770-2-800x565.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Elon Musk ist jetzt der reichste Mensch der Welt</title>
+      <link>https://www.businessinsider.de/gruenderszene/elon-musk-tesla-chef-ist-jetzt-der-reichste-mensch-der-welt-2/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=elon-musk-tesla-chef-ist-jetzt-der-reichste-mensch-der-welt-2</link>
+      <dc:creator>Christoph Damm</dc:creator>
+      <pubDate>Thu, 07 Jan 2021 17:15:07 +0000</pubDate>
+      <category>Gründerszene</category>
+      <category>Elon Musk</category>
+      <category>Tesla</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1919406</guid>
+      <description>Dank des raketenhaften Anstiegs der Tesla-Aktie ist Chef Elon Musk nun der reichste Mensch der Welt. Er überholte Jeff Bezos.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/elon-musk-tesla-800x533.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Mit diesen Tipps gelingt der Wechsel zur digitalen Buchhaltung</title>
+      <link>https://www.businessinsider.de/gruenderszene/gs-connect/billomat/wechsel-zur-digitalen-buchhaltung-billomat-2020-12698/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=wechsel-zur-digitalen-buchhaltung-billomat-2020-12698</link>
+      <dc:creator>Lisa Kühne</dc:creator>
+      <pubDate>Thu, 07 Jan 2021 15:02:00 +0000</pubDate>
+      <category>Anzeige</category>
+      <category>Billomat</category>
+      <category>Gründerszene</category>
+      <category>GS Connect</category>
+      <category>Sponsored Post</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1856095</guid>
+      <description>Die Finanzen schnell und unkompliziert online erledigen? So kehren Selbstständige und Unternehmen dem Papierchaos endlich den Rücken zu. Anzeige</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/12/billomat-buchhaltung-artikelbild-1-800x511.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Too Good To Go holt sich 25 Millionen für die US-Expansion</title>
+      <link>https://www.businessinsider.de/gruenderszene/food/to-good-to-go-finanzierung-2021/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=to-good-to-go-finanzierung-2021</link>
+      <dc:creator>GS Timo Brücken</dc:creator>
+      <pubDate>Thu, 07 Jan 2021 14:47:04 +0000</pubDate>
+      <category>Food</category>
+      <category>DHDL</category>
+      <category>Finanzierung / Funding</category>
+      <category>VC</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1918723</guid>
+      <description>Ein VC mit sozialem Anspruch steigt bei To Good To Go ein. Das Foodsharing-Startup musste durch Corona große Einbußen hinnehmen.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/mette_lykke_34-website-edit-800x533.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Berliner N26-Verfolger Mambu steigt zum Unicorn auf</title>
+      <link>https://www.businessinsider.de/gruenderszene/fintech/mambu-unicorn-fintech/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=mambu-unicorn-fintech</link>
+      <dc:creator>Lisa Ksienrzyk</dc:creator>
+      <pubDate>Thu, 07 Jan 2021 13:56:03 +0000</pubDate>
+      <category>Fintech</category>
+      <category>Investment</category>
+      <category>Unicorn / Einhorn</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1918619</guid>
+      <description>Das Berliner Fintech bietet eine Software-Lösung für Finanzprodukte an. VCs aus dem Silicon Valley stecken nun 110 Millionen Euro in Mambu.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/a165284700c32e6a9de030f9b5bd9351-mambu-secures-30-million-funding-to-accelerate-growth-800x533.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Warum ein Börsengang von Mister Spex immer wahrscheinlicher wird</title>
+      <link>https://www.businessinsider.de/gruenderszene/business/boersengang-ipo-mister-spex-wahrscheinlicher/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=boersengang-ipo-mister-spex-wahrscheinlicher</link>
+      <dc:creator>Sarah Heuberger</dc:creator>
+      <pubDate>Thu, 07 Jan 2021 13:30:00 +0000</pubDate>
+      <category>Business</category>
+      <category>Gründerszene</category>
+      <category>IPO</category>
+      <category>Startup Investment</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1917743</guid>
+      <description>Schon einmal hatte Mister Spex den Börsengang angekündigt, dann aber wieder zurückgezogen. Jetzt stehen die Zeichen wieder auf IPO.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2019/01/10-mister-spex-800x533.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Trade Republic startet in Frankreich</title>
+      <link>https://www.businessinsider.de/gruenderszene/news/trade-republic-geht-nach-frankreich/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=trade-republic-geht-nach-frankreich</link>
+      <dc:creator>Fiona Mathewson</dc:creator>
+      <pubDate>Thu, 07 Jan 2021 13:14:35 +0000</pubDate>
+      <category>News</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1918482</guid>
+      <description>&lt;p&gt;Der gehypte Smartphone-Broker bietet seine Dienste nun auch in Frankreich an. Ab sofort können sich dortige Kunden auf eine Warteliste eintragen, um ihr Geld über die gleichnamige Trading-App in Aktien, ETFs und Derivate investieren zu können. Schon „in den nächsten Wochen” soll der finale Launch folgen. Gegründet wurde Trade Republic 2015 von Christian Hecker, Thomas [&amp;hellip;]&lt;/p&gt;
+</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/11/trade-republic-klein-800x533.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Hamburg baut neues Gründerzentrum für 35 Millionen Euro</title>
+      <link>https://www.businessinsider.de/gruenderszene/hamburg-baut-neues-gruenderzentrum-mit-corona-hilfsgeldern/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=hamburg-baut-neues-gruenderzentrum-mit-corona-hilfsgeldern</link>
+      <dc:creator>Fiona Mathewson</dc:creator>
+      <pubDate>Thu, 07 Jan 2021 12:30:00 +0000</pubDate>
+      <category>Allgemein</category>
+      <category>Gründerszene</category>
+      <category>Forschung</category>
+      <category>Hamburg</category>
+      <category>Startup-Büros</category>
+      <category>VC</category>
+      <category>Wissenschaft</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1916259</guid>
+      <description>&lt;p&gt;Für den Bau des neuen Gründerszentrums, das den Namen Techhub tragen soll, investiert die Hansestadt Hamburg insgesamt 35 Millionen Euro. Das Geld stammt laut einem Bericht des Hamburger Abendblatts aus dem Corona-Stabiliserungsprogramm (HWSP), das insgesamt 900 Millionen Euro schwer ist. Demnach sollen 45 Millionen Euro in innovative Projekte fließen. Hiervon sollen 35 Millionen Euro der [&amp;hellip;]&lt;/p&gt;
+</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/techhub-hamburg-1-800x491.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Fünfstelliger Monatsumsatz nach kurzer Zeit – wird Bringoo das neue Gorillas?</title>
+      <link>https://www.businessinsider.de/gruenderszene/food/bringoo-lieferdienst-r/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=bringoo-lieferdienst-r</link>
+      <dc:creator>Lisa Ksienrzyk</dc:creator>
+      <pubDate>Thu, 07 Jan 2021 11:02:48 +0000</pubDate>
+      <category>Food</category>
+      <category>Gründerszene</category>
+      <category>Gründerszene Plus</category>
+      <category>Food Trends</category>
+      <category>Lieferdienst</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1917922</guid>
+      <description>In Dubai baute Hasib Khan einen Carsharing-Dienst auf, der 27 Millionen Euro wert war. Nun versucht er es mit seinem Lieferdienst Bringoo.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/Bringoo-800x533.jpg" type="image/jpeg"/>
+    </item>
+  </channel>
+</rss>
