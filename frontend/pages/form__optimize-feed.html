@@ -9,22 +9,39 @@
     <h1 class="display-1 mb-3">{{title}}</h1>
     <p class="lead mb-4">{{description}}</p> 
     <form action="{{ url_for('optimize_feed') }}" method="POST">
-      <div class="form-group">
-        <label for="email">Email address:</label>
-        <input type="email" class="form-control" id="email">
+      
+      <div class="form-group mb-4">
+        <label for="input_title">Feed Title</label>
+        <input class="form-control mb-4" type="text" name="input_title" value="" placeholder="Please enter a feed title. If there is no input, the URL will be used."/>
       </div>
-      <div class="form-group">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd">
+    
+      <div class="form-group mb-4">
+        <label for="input_description">Feed Description</label>
+        <textarea maxlength="140" id="myText" height="500" class="form-control" rows="3" name="input_description" placeholder="Please enter a feed description. If there is no input, the meta-description will be used."></textarea>
+        <span id="wordCount">0</span> Characters
       </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-          Default checkbox
-        </label>
+
+      <div class="form-group mb-4">
+        <label for="input_analytics_ua">Google Analytics Property</label>
+        <input class="form-control" type="text" name="input_analytics_ua" value="" placeholder="Please enter a Google Analytics property. (UA-XXXXXX-X)"/>
       </div>
-      <input class="btn btn-primary btn-lg mt-2" type="submit" value="Get custom feed URL" />
+
+      <div class="form-group demo mb-4">
+        <label for="input_accentColor">Feed Color Picker</label>
+        <div class="feedColorPicker">
+            <input id="feedColorPickerInput" class="form-control input-lg" type="text" name="input_accentColor"  value="#fff" />
+        </div>    
+      </div>
+
+      <div class="form-group mb-4">
+        <label for="input_icon">Feed Icon URL</label>
+        <input class="form-control" type="url" name="input_icon" value="" placeholder="Please enter the URL of your feed icon."/>
+      </div>
+
+      <input class="btn btn-primary btn-lg mt-2 mb-5" type="submit" value="Get custom feed URL" />
+
     </form>
+
   </div>
 
 </div>

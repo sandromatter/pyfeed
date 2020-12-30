@@ -1,20 +1,96 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
   <channel>
-    <webfeeds:icon xmlns:webfeeds="http://webfeeds.org/rss/1.0">{XXXXXXXXXXXXXXXXXX}</webfeeds:icon>
-    <webfeeds:accentColor xmlns:webfeeds="http://webfeeds.org/rss/1.0">{XXXXXXXXXXXXXXXXXX}</webfeeds:accentColor>
-    <webfeeds:analytics xmlns:webfeeds="http://webfeeds.org/rss/1.0" id="UA-XXXXXX" engine="GoogleAnalytics"/>
     <webfeeds:related xmlns:webfeeds="http://webfeeds.org/rss/1.0" layout="card" target="browser"/>
-    <title>{XXXXXXXXXXXXXXXXXX}</title>
+    <webfeeds:icon xmlns:webfeeds="http://webfeeds.org/rss/1.0">https://www.icon.png</webfeeds:icon>
+    <webfeeds:accentColor xmlns:webfeeds="http://webfeeds.org/rss/1.0">#ffffff</webfeeds:accentColor>
+    <webfeeds:analytics xmlns:webfeeds="http://webfeeds.org/rss/1.0" id="UA-XXXXXX-X" engine="GoogleAnalytics"/>
+    <title>Titel</title>
     <atom:link href="{XXXXXXXXXXXXXXXXXX}" rel="self" type="application/rss+xml"/>
     <link>https://www.businessinsider.de</link>
-    <description>{XXXXXXXXXXXXXXXXXX}</description>
-    <lastBuildDate>Sun, 10 Jan 2021 16:50:30 +0000</lastBuildDate>
+    <description>Description is 140 characters long.</description>
+    <lastBuildDate>Mon, 11 Jan 2021 09:31:28 +0000</lastBuildDate>
     <language>de-DE</language>
     <sy:updatePeriod>
 	hourly	</sy:updatePeriod>
     <sy:updateFrequency>
 	1	</sy:updateFrequency>
+    <item>
+      <title>Als Arbeitsloser setzte dieser Hamburger seine Millionen-Idee um</title>
+      <link>https://www.businessinsider.de/gruenderszene/business/appinio-jonathan-kurfass/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=appinio-jonathan-kurfass</link>
+      <dc:creator>Daniel Hüfner</dc:creator>
+      <pubDate>Mon, 11 Jan 2021 08:24:50 +0000</pubDate>
+      <category>Business</category>
+      <category>Marktforschung</category>
+      <category>Startup</category>
+      <category>Umfrage</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1925136</guid>
+      <description>Als Jonathan Kurfess seinem Ex-Arbeitgeber ein Konzept für bessere Marktforschung präsentiert, lehnt dieser ab. Also gründet er selbst.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/appinio-jonathan-kurfess-800x600.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Teamviewer steigert Einnahmen um 40 Prozent</title>
+      <link>https://www.businessinsider.de/gruenderszene/business/teamviewer-vorlaeufige-zahlen-2020/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=teamviewer-vorlaeufige-zahlen-2020</link>
+      <dc:creator>GS Timo Brücken</dc:creator>
+      <pubDate>Mon, 11 Jan 2021 08:09:36 +0000</pubDate>
+      <category>Business</category>
+      <category>Technologie</category>
+      <category>Software</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1925133</guid>
+      <description>Fernwartungssoftware dürfte sich im Jahr von Pandemie und Homeoffice gut verkauft haben. Wie gut, das zeigen die 2020er Zahlen von Teamviewer.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/11/oliver-steil-teamviewer-2-800x535.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Mit diesem Pitchdeck holte sich Vanmoof 34 Millionen Euro</title>
+      <link>https://www.businessinsider.de/gruenderszene/automotive-mobility/vanmoof-pitch-deck/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=vanmoof-pitch-deck</link>
+      <dc:creator>Alex Hofmann</dc:creator>
+      <pubDate>Mon, 11 Jan 2021 07:00:00 +0000</pubDate>
+      <category>Automotive &amp; Mobility</category>
+      <category>Gründerszene</category>
+      <category>Gründerszene Plus</category>
+      <category>Fahrrad</category>
+      <category>Mobilität / Mobility</category>
+      <category>Pitchdeck</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1921438</guid>
+      <description>Der E-Bike-Hersteller konnte sein Geschäft zuletzt deutlich ausbauen. Allein im vergangenen Jahr flossen 45 Millionen in das Unternehmen.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/vanmoof-taco-carlier-800x450.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Warum Apple niemals ein eigenes Auto bauen wird</title>
+      <link>https://www.businessinsider.de/gruenderszene/automotive-mobility/warum-apple-niemals-ein-eigenes-auto-bauen-wird/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=warum-apple-niemals-ein-eigenes-auto-bauen-wird</link>
+      <dc:creator>Don Dahlmann</dc:creator>
+      <pubDate>Mon, 11 Jan 2021 05:00:00 +0000</pubDate>
+      <category>Automotive &amp; Mobility</category>
+      <category>Gründerszene</category>
+      <category>Apple</category>
+      <category>Autoindustrie</category>
+      <category>Investment</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1918252</guid>
+      <description>&lt;p&gt;Die Gerüchte, dass Apple an einem eigenen Auto arbeitet, gibt es seit 2014. Damals wechselte der hoch angesehene Ingenieur und Entwickler Johann Jungwirth überraschend von Mercedes zu Apple. Doch so richtig kam das Projekt „Titan“, so der interne Name, nie in Schwung. Jungwirth verließ Apple nach nur einem Jahr. Und er war nicht der einzige [&amp;hellip;]&lt;/p&gt;
+</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/GettyImages-520929624-800x533.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Twitter, Facebook, Snap: Große Tech-Firmen gehen gegen Donald Trump vor</title>
+      <link>https://www.businessinsider.de/gruenderszene/business/tech-firmen-gehen-gegen-trump-vor/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=tech-firmen-gehen-gegen-trump-vor</link>
+      <dc:creator>Sabrina Frangos</dc:creator>
+      <pubDate>Mon, 11 Jan 2021 04:55:31 +0000</pubDate>
+      <category>Business</category>
+      <category>Gründerszene</category>
+      <category>Technologie</category>
+      <category>Autoindustrie</category>
+      <category>Autonomes Fahren</category>
+      <category>Donald Trump</category>
+      <category>Facebook</category>
+      <category>Paypal</category>
+      <category>Samsung</category>
+      <category>Startup</category>
+      <category>Tesla</category>
+      <category>Twitter</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1924916</guid>
+      <description>Die Tech-Industrie hat dem scheidenden US-Präsidenten Donald Trump letzte Woche ordentlich zugesetzt. Außerdem: Nio macht Tesla eine Kampfansage und Samsung trotzt der Corona-Pandemie.</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/11/GettyImages-1284133542-800x577.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>18 Millionen Euro für die Hype-Trinkflaschen von Air Up</title>
       <link>https://www.businessinsider.de/gruenderszene/food/air-up-18-millionen-pepsico/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=air-up-18-millionen-pepsico</link>
@@ -121,21 +197,6 @@
       <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/11/philipp-pausder-thermondo-by-chris-marxen-2_1220x814_oc-800x534.jpg" type="image/jpeg"/>
     </item>
     <item>
-      <title>Getnow, Hellofresh, Too Good To Go – das sind die Food-News der Woche</title>
-      <link>https://www.businessinsider.de/gruenderszene/food/food-newsletter-2021-01-08/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=food-newsletter-2021-01-08</link>
-      <comments>https://www.businessinsider.de/gruenderszene/food/food-newsletter-2021-01-08/#respond</comments>
-      <dc:creator>Lisa Ksienrzyk</dc:creator>
-      <pubDate>Fri, 08 Jan 2021 07:30:00 +0000</pubDate>
-      <category>Food</category>
-      <category>Gründerszene</category>
-      <category>Essen</category>
-      <guid isPermaLink="false">https://www.businessinsider.de/?p=1918840</guid>
-      <description>Die Getnow-Rettung in letzter Sekunde, hohe Finanzspritzen zum Jahresstart und eine überraschende Expansion.</description>
-      <wfw:commentRss>https://www.businessinsider.de/gruenderszene/food/food-newsletter-2021-01-08/feed/</wfw:commentRss>
-      <slash:comments>0</slash:comments>
-      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/11/hello-fresh-hellofresh-marketing-new-york-800x534.jpg" type="image/jpeg"/>
-    </item>
-    <item>
       <title>Gesundheits-Startups wachsen in der Pandemie rasant – so geht’s 2021 weiter</title>
       <link>https://www.businessinsider.de/gruenderszene/health/gesundheits-startups-wachsen-in-corona-pandemie-rasant-so-gehts-2021-weiter/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=gesundheits-startups-wachsen-in-corona-pandemie-rasant-so-gehts-2021-weiter</link>
       <dc:creator>Jürgen Stüber</dc:creator>
@@ -150,6 +211,21 @@
       <guid isPermaLink="false">https://www.businessinsider.de/?p=1918908</guid>
       <description>Die digitale Gesundheitswirtschaft gehört zu den Gewinnern der Corona-Pandemie. Auch 2021 wird sich dieser Trend fortsetzen. Fünf Trends.</description>
       <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/TeleClinic_CEO_KatharinaJuenger-800x534.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Getnow, Hellofresh, Too Good To Go – das sind die Food-News der Woche</title>
+      <link>https://www.businessinsider.de/gruenderszene/food/food-newsletter-2021-01-08/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=food-newsletter-2021-01-08</link>
+      <comments>https://www.businessinsider.de/gruenderszene/food/food-newsletter-2021-01-08/#respond</comments>
+      <dc:creator>Lisa Ksienrzyk</dc:creator>
+      <pubDate>Fri, 08 Jan 2021 07:30:00 +0000</pubDate>
+      <category>Food</category>
+      <category>Gründerszene</category>
+      <category>Essen</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1918840</guid>
+      <description>Die Getnow-Rettung in letzter Sekunde, hohe Finanzspritzen zum Jahresstart und eine überraschende Expansion.</description>
+      <wfw:commentRss>https://www.businessinsider.de/gruenderszene/food/food-newsletter-2021-01-08/feed/</wfw:commentRss>
+      <slash:comments>0</slash:comments>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/11/hello-fresh-hellofresh-marketing-new-york-800x534.jpg" type="image/jpeg"/>
     </item>
     <item>
       <title>Vom Milliarden-Startup zum Corona-Absteiger: Die große Getyourguide-Chronik</title>
@@ -222,73 +298,6 @@
       <guid isPermaLink="false">https://www.businessinsider.de/?p=1918723</guid>
       <description>Ein VC mit sozialem Anspruch steigt bei To Good To Go ein. Das Foodsharing-Startup musste durch Corona große Einbußen hinnehmen.</description>
       <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/mette_lykke_34-website-edit-800x533.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Berliner N26-Verfolger Mambu steigt zum Unicorn auf</title>
-      <link>https://www.businessinsider.de/gruenderszene/fintech/mambu-unicorn-fintech/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=mambu-unicorn-fintech</link>
-      <dc:creator>Lisa Ksienrzyk</dc:creator>
-      <pubDate>Thu, 07 Jan 2021 13:56:03 +0000</pubDate>
-      <category>Fintech</category>
-      <category>Investment</category>
-      <category>Unicorn / Einhorn</category>
-      <guid isPermaLink="false">https://www.businessinsider.de/?p=1918619</guid>
-      <description>Das Berliner Fintech bietet eine Software-Lösung für Finanzprodukte an. VCs aus dem Silicon Valley stecken nun 110 Millionen Euro in Mambu.</description>
-      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/a165284700c32e6a9de030f9b5bd9351-mambu-secures-30-million-funding-to-accelerate-growth-800x533.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Warum ein Börsengang von Mister Spex immer wahrscheinlicher wird</title>
-      <link>https://www.businessinsider.de/gruenderszene/business/boersengang-ipo-mister-spex-wahrscheinlicher/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=boersengang-ipo-mister-spex-wahrscheinlicher</link>
-      <dc:creator>Sarah Heuberger</dc:creator>
-      <pubDate>Thu, 07 Jan 2021 13:30:00 +0000</pubDate>
-      <category>Business</category>
-      <category>Gründerszene</category>
-      <category>IPO</category>
-      <category>Startup Investment</category>
-      <guid isPermaLink="false">https://www.businessinsider.de/?p=1917743</guid>
-      <description>Schon einmal hatte Mister Spex den Börsengang angekündigt, dann aber wieder zurückgezogen. Jetzt stehen die Zeichen wieder auf IPO.</description>
-      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2019/01/10-mister-spex-800x533.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Trade Republic startet in Frankreich</title>
-      <link>https://www.businessinsider.de/gruenderszene/news/trade-republic-geht-nach-frankreich/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=trade-republic-geht-nach-frankreich</link>
-      <dc:creator>Fiona Mathewson</dc:creator>
-      <pubDate>Thu, 07 Jan 2021 13:14:35 +0000</pubDate>
-      <category>News</category>
-      <guid isPermaLink="false">https://www.businessinsider.de/?p=1918482</guid>
-      <description>&lt;p&gt;Der gehypte Smartphone-Broker bietet seine Dienste nun auch in Frankreich an. Ab sofort können sich dortige Kunden auf eine Warteliste eintragen, um ihr Geld über die gleichnamige Trading-App in Aktien, ETFs und Derivate investieren zu können. Schon „in den nächsten Wochen” soll der finale Launch folgen. Gegründet wurde Trade Republic 2015 von Christian Hecker, Thomas [&amp;hellip;]&lt;/p&gt;
-</description>
-      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/11/trade-republic-klein-800x533.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Hamburg baut neues Gründerzentrum für 35 Millionen Euro</title>
-      <link>https://www.businessinsider.de/gruenderszene/hamburg-baut-neues-gruenderzentrum-mit-corona-hilfsgeldern/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=hamburg-baut-neues-gruenderzentrum-mit-corona-hilfsgeldern</link>
-      <dc:creator>Fiona Mathewson</dc:creator>
-      <pubDate>Thu, 07 Jan 2021 12:30:00 +0000</pubDate>
-      <category>Allgemein</category>
-      <category>Gründerszene</category>
-      <category>Forschung</category>
-      <category>Hamburg</category>
-      <category>Startup-Büros</category>
-      <category>VC</category>
-      <category>Wissenschaft</category>
-      <guid isPermaLink="false">https://www.businessinsider.de/?p=1916259</guid>
-      <description>&lt;p&gt;Für den Bau des neuen Gründerszentrums, das den Namen Techhub tragen soll, investiert die Hansestadt Hamburg insgesamt 35 Millionen Euro. Das Geld stammt laut einem Bericht des Hamburger Abendblatts aus dem Corona-Stabiliserungsprogramm (HWSP), das insgesamt 900 Millionen Euro schwer ist. Demnach sollen 45 Millionen Euro in innovative Projekte fließen. Hiervon sollen 35 Millionen Euro der [&amp;hellip;]&lt;/p&gt;
-</description>
-      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/techhub-hamburg-1-800x491.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Fünfstelliger Monatsumsatz nach kurzer Zeit – wird Bringoo das neue Gorillas?</title>
-      <link>https://www.businessinsider.de/gruenderszene/food/bringoo-lieferdienst-r/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=bringoo-lieferdienst-r</link>
-      <dc:creator>Lisa Ksienrzyk</dc:creator>
-      <pubDate>Thu, 07 Jan 2021 11:02:48 +0000</pubDate>
-      <category>Food</category>
-      <category>Gründerszene</category>
-      <category>Gründerszene Plus</category>
-      <category>Food Trends</category>
-      <category>Lieferdienst</category>
-      <guid isPermaLink="false">https://www.businessinsider.de/?p=1917922</guid>
-      <description>In Dubai baute Hasib Khan einen Carsharing-Dienst auf, der 27 Millionen Euro wert war. Nun versucht er es mit seinem Lieferdienst Bringoo.</description>
-      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/Bringoo-800x533.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

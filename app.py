@@ -24,10 +24,10 @@ app.config.from_object("config.DevelopmentConfig")
 method_get = "GET"
 method_post = "POST"
 
-session_property_url_submitted = "url_submitted"
-session_property_feed_optimized = "feed_optimized"
-session_property_feedurl = "feedurl"
-session_property_xml_filename = "xml_filename"
+session_key_url_submitted = "url_submitted"
+session_key_feed_optimized = "feed_optimized"
+session_key_feedurl = "feedurl"
+session_key_xml_filename = "xml_filename"
 
 message_type_warning = "warning"
 message_type_danger = "danger"
@@ -61,7 +61,7 @@ page_path_get_endpoint_url = "/pages/endpoint__feed-url.html"
 @app.route("/")
 def index():
     url_submitted = False
-    session[session_property_url_submitted] = url_submitted
+    session[session_key_url_submitted] = url_submitted
     return render_template(page_path_index, title="Pyfeed", description="The modern 2020 python feedburner.")
 
 
@@ -76,7 +76,7 @@ def introduction():
 def submit_feed():
     if request.method == method_post:
         feedurl = request.form["input_feedurl"]
-        session[session_property_feedurl] = feedurl
+        session[session_key_feedurl] = feedurl
 
         # Test if submitted URL is empty or valid.
         if feedburner.check_feedurl_empty(feedurl):
@@ -87,14 +87,15 @@ def submit_feed():
             return redirect(url_for(app_function_submit_feed))
         # Therefore this is a valid RSS URL
         else:
-            # Save RSS feed as XML
-            feedurl = session[session_property_feedurl]
-            xml_filename = feedburner.save_xml(feedurl)
-            session[session_property_xml_filename] = xml_filename
+            # Save RSS feed as XML and stripped URL into dict
+            feedurl = session[session_key_feedurl]
             stripped_feedurl = feedburner.remove_www_feedurl(feedurl)
+            feedburner.delete_old_xml(stripped_feedurl)
+            xml_filename = feedburner.save_xml(feedurl)
+            session[session_key_xml_filename] = xml_filename
             feedburner.save_json(stripped_feedurl, xml_filename)
             url_submitted = True
-            session[session_property_url_submitted] = url_submitted
+            session[session_key_url_submitted] = url_submitted
             return redirect(url_for(app_function_optimize_feed))
 
     # Therefore request method must be get
@@ -105,7 +106,7 @@ def submit_feed():
 # Form optimize feed page
 @app.route("/optimize-feed", methods=[method_get, method_post])
 def optimize_feed():
-    if session[session_property_url_submitted]:
+    if session[session_key_url_submitted]:
         
         # Optimize feed URL
         if request.method == method_get:
@@ -120,7 +121,7 @@ def optimize_feed():
 
             feedburner.optimize_xml_file(feed_title, feed_description, feed_analytics_ua, feed_accentColor, feed_icon)
             feed_optimized = True
-            session[session_property_feed_optimized] = feed_optimized
+            session[session_key_feed_optimized] = feed_optimized
             return redirect(url_for("get_endpoint_url"))
             
     # Therefore no RSS feed URL is submitted
@@ -132,7 +133,7 @@ def optimize_feed():
 # Form enter custom URL
 @app.route("/endpoint-url")
 def get_endpoint_url():
-    if session[session_property_url_submitted] and session[session_property_feed_optimized]:
+    if session[session_key_url_submitted] and session[session_key_feed_optimized]:
         return render_template(page_path_get_endpoint_url, title="Get URL", description="Get your endpoint URL of your customized feed.")
     # Therefore no RSS feed URL is submitted and optimized
     else:
@@ -142,7 +143,7 @@ def get_endpoint_url():
 
 @app.route("/endpoint-url/<xml_filename>")
 def xml_file_endpoint_url(xml_filename):
-    xml_filename = session[session_property_xml_filename]
+    xml_filename = session[session_key_xml_filename]
     file_path_xml_file = "backend/xml/"      
     return send_from_directory(file_path_xml_file, xml_filename, mimetype="text/xml")
 
