@@ -20,9 +20,11 @@ import os
 # ---------------------------------------------------------------------------------------
 content_type_id = "Content-Type"
 channel = "channel"
+
 json_filename = "submitted-urls.json"
 file_path_json_filename = "backend/json/" + json_filename
 folder_path_xml = "backend/xml/"
+webapp_url = "http://127.0.0.1:5000/"
 
 session_key_xml_filename = "xml_filename"
 session_key_file_path_xml_filename = "file_path_xml_filename"
@@ -35,8 +37,8 @@ session_key_stripped_url = "stripped_url"
 # ---------------------------------------------------------------------------------------
 
 # Check if the requested URL is empty
-def check_feedurl_empty(url):
-    if url == "":
+def check_input_empty(input):
+    if input == "":
         return True
 
 
@@ -149,57 +151,67 @@ def optimize_xml_file(feed_title, feed_description, feed_analytics_ua, feed_acce
     parser = etree.XMLParser(remove_blank_text = True)
     tree = etree.parse(session[session_key_file_path_xml_filename], parser)
     root = tree.getroot()
+    inputs = [feed_title, feed_description, feed_analytics_ua, feed_accentColor, feed_icon]
 
-    # Replace title
-    title = root.xpath("//rss/channel/title")
-    if title:
-        # Replaces <title> text
-        title[0].text = feed_title
-   
-    # Replace description
-    description = root.xpath("//rss/channel/description")
-    if description:
-        # Replaces <description> text
-        description[0].text = feed_description
+
+    for i in inputs:
+        check_input_empty(i)
+
+        if feed_title:
+            # Replace title
+            title = root.xpath("//rss/channel/title")
+            if title:
+                # Replaces <title> text
+                title[0].text = feed_title
     
-    # Add webfeeds:analytics plus additional arguments
-    ns = "http://webfeeds.org/rss/1.0"
-    etree.register_namespace("webfeeds", ns)
-    etree.Element("rss")
-    find_channel = tree.find(channel)
-    webfeeds = etree.SubElement(find_channel, "{http://webfeeds.org/rss/1.0}analytics")
-    find_channel.insert(0, webfeeds)
-    ns = {"webfeeds": "http://webfeeds.org/rss/1.0"}
-    webfeeds_analytics = root.xpath("//rss/channel/webfeeds:analytics", namespaces = ns)
-    for el in webfeeds_analytics:
-        el.attrib["id"] = feed_analytics_ua
-        el.attrib["engine"] = "GoogleAnalytics"
-
-    # Add webfeeds:accentColor plus additional arguments
-    ns = "http://webfeeds.org/rss/1.0"
-    etree.register_namespace("webfeeds", ns)
-    etree.Element("rss")
-    find_channel = tree.find(channel)
-    webfeeds = etree.SubElement(find_channel, "{http://webfeeds.org/rss/1.0}accentColor")
-    find_channel.insert(0, webfeeds)
-    ns = {"webfeeds": "http://webfeeds.org/rss/1.0"}
-    webfeeds_accentColor = root.xpath("//rss/channel/webfeeds:accentColor", namespaces = ns)
-    if webfeeds_accentColor:
-        # Replaces <webfeeds:accentColor> text
-        webfeeds_accentColor[0].text = feed_accentColor
+        elif feed_description:
+            # Replace description
+            description = root.xpath("//rss/channel/description")
+            if description:
+                # Replaces <description> text
+                description[0].text = feed_description
         
-    # Add webfeeds:icon plus additional arguments
-    ns = "http://webfeeds.org/rss/1.0"
-    etree.register_namespace("webfeeds", ns)
-    etree.Element("rss")
-    find_channel = tree.find(channel)
-    webfeeds = etree.SubElement(find_channel, "{http://webfeeds.org/rss/1.0}icon")
-    find_channel.insert(0, webfeeds)
-    ns = {"webfeeds": "http://webfeeds.org/rss/1.0"}
-    webfeeds_icon = root.xpath("//rss/channel/webfeeds:icon", namespaces = ns)
-    if webfeeds_icon:
-        # Replaces <webfeeds:icon> text
-        webfeeds_icon[0].text = feed_icon
+        elif feed_analytics_ua:
+            # Add webfeeds:analytics plus additional arguments
+            ns = "http://webfeeds.org/rss/1.0"
+            etree.register_namespace("webfeeds", ns)
+            etree.Element("rss")
+            find_channel = tree.find(channel)
+            webfeeds = etree.SubElement(find_channel, "{http://webfeeds.org/rss/1.0}analytics")
+            find_channel.insert(0, webfeeds)
+            ns = {"webfeeds": "http://webfeeds.org/rss/1.0"}
+            webfeeds_analytics = root.xpath("//rss/channel/webfeeds:analytics", namespaces = ns)
+            for el in webfeeds_analytics:
+                el.attrib["id"] = feed_analytics_ua
+                el.attrib["engine"] = "GoogleAnalytics"
+
+        elif feed_accentColor:
+            # Add webfeeds:accentColor plus additional arguments
+            ns = "http://webfeeds.org/rss/1.0"
+            etree.register_namespace("webfeeds", ns)
+            etree.Element("rss")
+            find_channel = tree.find(channel)
+            webfeeds = etree.SubElement(find_channel, "{http://webfeeds.org/rss/1.0}accentColor")
+            find_channel.insert(0, webfeeds)
+            ns = {"webfeeds": "http://webfeeds.org/rss/1.0"}
+            webfeeds_accentColor = root.xpath("//rss/channel/webfeeds:accentColor", namespaces = ns)
+            if webfeeds_accentColor:
+                # Replaces <webfeeds:accentColor> text
+                webfeeds_accentColor[0].text = feed_accentColor
+
+        elif feed_icon:    
+            # Add webfeeds:icon plus additional arguments
+            ns = "http://webfeeds.org/rss/1.0"
+            etree.register_namespace("webfeeds", ns)
+            etree.Element("rss")
+            find_channel = tree.find(channel)
+            webfeeds = etree.SubElement(find_channel, "{http://webfeeds.org/rss/1.0}icon")
+            find_channel.insert(0, webfeeds)
+            ns = {"webfeeds": "http://webfeeds.org/rss/1.0"}
+            webfeeds_icon = root.xpath("//rss/channel/webfeeds:icon", namespaces = ns)
+            if webfeeds_icon:
+                # Replaces <webfeeds:icon> text
+                webfeeds_icon[0].text = feed_icon
 
     # Add webfeeds:related plus additional arguments
     ns = "http://webfeeds.org/rss/1.0"
@@ -218,7 +230,7 @@ def optimize_xml_file(feed_title, feed_description, feed_analytics_ua, feed_acce
     ns = {"atom": "http://www.w3.org/2005/Atom"}
     atom_link = root.xpath("//rss/channel/atom:link[@href]", namespaces = ns)
     for el in atom_link:
-        el.attrib["href"] = "{XXXXXXXXXXXXXXXXXX}"
+        el.attrib["href"] = webapp_url + "endpoint-url/" + session[session_key_xml_filename]
 
     # Save XML file with pretty print
     def pretty_print_write_xml(xml):

@@ -79,7 +79,7 @@ def submit_feed():
         session[session_key_feedurl] = feedurl
 
         # Test if submitted URL is empty or valid.
-        if feedburner.check_feedurl_empty(feedurl):
+        if feedburner.check_input_empty(feedurl):
             flash("Please submit an RSS feed URL.", message_type_warning)
             return redirect(url_for(app_function_submit_feed))
         elif feedburner.check_feedurl_invalid(feedurl):
