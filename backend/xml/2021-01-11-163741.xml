@@ -2,16 +2,47 @@
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
   <channel>
     <webfeeds:related xmlns:webfeeds="http://webfeeds.org/rss/1.0" layout="card" target="browser"/>
-    <title>Titel</title>
-    <atom:link href="http://127.0.0.1:5000/endpoint-url/2021-01-11-140730.xml" rel="self" type="application/rss+xml"/>
+    <webfeeds:icon xmlns:webfeeds="http://webfeeds.org/rss/1.0">https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png</webfeeds:icon>
+    <title>Gründerszene – Business Insider</title>
+    <atom:link href="http://127.0.0.1:5000/endpoint-url/2021-01-11-163741.xml" rel="self" type="application/rss+xml"/>
     <link>https://www.businessinsider.de</link>
     <description>Aktuelle News von Business Insider aus Deutschland.</description>
-    <lastBuildDate>Mon, 11 Jan 2021 12:47:24 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Jan 2021 15:00:19 +0000</lastBuildDate>
     <language>de-DE</language>
     <sy:updatePeriod>
 	hourly	</sy:updatePeriod>
     <sy:updateFrequency>
 	1	</sy:updateFrequency>
+    <item>
+      <title>5 Tipps, die den Vertrieb ankurbeln</title>
+      <link>https://www.businessinsider.de/gruenderszene/gs-connect/salesforce/5-tipps-die-den-vertrieb-ankurbeln-salesforce-2020-12434/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=5-tipps-die-den-vertrieb-ankurbeln-salesforce-2020-12434</link>
+      <dc:creator>Lisa Kühne</dc:creator>
+      <pubDate>Mon, 11 Jan 2021 15:00:00 +0000</pubDate>
+      <category>Anzeige</category>
+      <category>Gründerszene</category>
+      <category>GS Connect</category>
+      <category>Salesforce</category>
+      <category>Sponsored Post</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1866843</guid>
+      <description>Vom Lead bis zur Rechnungsstellung in Nullkommanix? Schön wär’s! Mit diesen Schritten rücken die Vertriebsziele in greifbare Nähe. Anzeige</description>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/12/salesforce-vertrieb-artikelbild-800x533.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Finanzierungsformen für Startups – und ihre Vor- und Nachteile</title>
+      <link>https://www.businessinsider.de/gruenderszene/business/so-finanziert-sich-ein-startup-r/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=so-finanziert-sich-ein-startup-r</link>
+      <comments>https://www.businessinsider.de/gruenderszene/business/so-finanziert-sich-ein-startup-r/#respond</comments>
+      <dc:creator>gruenderszene</dc:creator>
+      <pubDate>Mon, 11 Jan 2021 13:45:00 +0000</pubDate>
+      <category>Business</category>
+      <category>Gründerszene Plus</category>
+      <category>Finanzierung / Funding</category>
+      <category>Investment</category>
+      <guid isPermaLink="false">https://www.businessinsider.de/?p=1843707</guid>
+      <description>Fremd- oder Eigenkapital, Kredit oder Funding-Runde? So entscheiden sich Gründer für die richtige Art der Startup-Finanzierung.</description>
+      <wfw:commentRss>https://www.businessinsider.de/gruenderszene/business/so-finanziert-sich-ein-startup-r/feed/</wfw:commentRss>
+      <slash:comments>0</slash:comments>
+      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/11/GettyImages-748345779-800x533.jpg" type="image/jpeg"/>
+    </item>
     <item>
       <title>Clark holt sich Tencent mit 69-Millionen-Runde an Bord</title>
       <link>https://www.businessinsider.de/gruenderszene/clark-69-millionen-tencent/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=clark-69-millionen-tencent</link>
@@ -260,34 +291,6 @@
       <guid isPermaLink="false">https://www.businessinsider.de/?p=1918908</guid>
       <description>Die digitale Gesundheitswirtschaft gehört zu den Gewinnern der Corona-Pandemie. Auch 2021 wird sich dieser Trend fortsetzen. Fünf Trends.</description>
       <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/TeleClinic_CEO_KatharinaJuenger-800x534.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Getnow, Hellofresh, Too Good To Go – das sind die Food-News der Woche</title>
-      <link>https://www.businessinsider.de/gruenderszene/food/food-newsletter-2021-01-08/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=food-newsletter-2021-01-08</link>
-      <comments>https://www.businessinsider.de/gruenderszene/food/food-newsletter-2021-01-08/#respond</comments>
-      <dc:creator>Lisa Ksienrzyk</dc:creator>
-      <pubDate>Fri, 08 Jan 2021 07:30:00 +0000</pubDate>
-      <category>Food</category>
-      <category>Gründerszene</category>
-      <category>Essen</category>
-      <guid isPermaLink="false">https://www.businessinsider.de/?p=1918840</guid>
-      <description>Die Getnow-Rettung in letzter Sekunde, hohe Finanzspritzen zum Jahresstart und eine überraschende Expansion.</description>
-      <wfw:commentRss>https://www.businessinsider.de/gruenderszene/food/food-newsletter-2021-01-08/feed/</wfw:commentRss>
-      <slash:comments>0</slash:comments>
-      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2020/11/hello-fresh-hellofresh-marketing-new-york-800x534.jpg" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>Vom Milliarden-Startup zum Corona-Absteiger: Die große Getyourguide-Chronik</title>
-      <link>https://www.businessinsider.de/gruenderszene/getyourguide-vom-milliarden-startup-zum-corona-absteiger-r/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=getyourguide-vom-milliarden-startup-zum-corona-absteiger-r</link>
-      <dc:creator>Georg Räth</dc:creator>
-      <pubDate>Fri, 08 Jan 2021 05:00:00 +0000</pubDate>
-      <category>Gründerszene</category>
-      <category>Chronik</category>
-      <category>GetYourGuide</category>
-      <guid isPermaLink="false">https://www.businessinsider.de/?p=1917792</guid>
-      <description>&lt;p&gt;Getyourguide startete beschaulich in einer Studenten-WG und wuchs in den vergangenen Jahren zum milliardenschweren Einhorn. Doch 2020 sackte der Umsatz wegen der Corona-Krise zwischenzeitlich auf Null ab und das Berliner Unternehmen, das Veranstaltungen und Aktivitäten von professionellen Anbietern verkauft, entließ ein Sechstel der Belegschaft. Jetzt hofft die Firma von Johannes Reck und Tao Tao auf [&amp;hellip;]&lt;/p&gt;
-</description>
-      <enclosure url="https://cdn.businessinsider.de/wp-content/uploads/2021/01/ezgif.com-webp-to-jpg-800x533.jpg" type="image/jpeg"/>
     </item>
   </channel>
 </rss>

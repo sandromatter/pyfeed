@@ -119,10 +119,18 @@ def optimize_feed():
             feed_accentColor = request.form["input_accentColor"]
             feed_icon = request.form["input_icon"]
 
-            feedburner.optimize_xml_file(feed_title, feed_description, feed_analytics_ua, feed_accentColor, feed_icon)
-            feed_optimized = True
-            session[session_key_feed_optimized] = feed_optimized
-            return redirect(url_for("get_endpoint_url"))
+            # Check if inputs are valid
+            if feedburner.check_analytics_invalid(feed_analytics_ua):
+                flash("Please submit a valid Google Analytics 3 property (UA-XXXXXX-X) or leave input empty.", message_type_danger)
+                return redirect(url_for(app_function_optimize_feed))
+            elif feedburner.check_image_invalid(feed_icon):
+                flash("Please submit a valid URL to your icon as image or leave input empty.", message_type_danger)
+                return redirect(url_for(app_function_optimize_feed))
+            else:
+                feedburner.optimize_xml_file(feed_title, feed_description, feed_analytics_ua, feed_accentColor, feed_icon)
+                feed_optimized = True
+                session[session_key_feed_optimized] = feed_optimized
+                return redirect(url_for("get_endpoint_url"))
             
     # Therefore no RSS feed URL is submitted
     else:  

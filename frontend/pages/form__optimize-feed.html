@@ -2,6 +2,10 @@
 
 {% block content %}
 
+{% for category, message in get_flashed_messages(with_categories=True) %}
+    <div class="alert alert-{{ category }} col-lg-8 col-md-12" role="alert">{{ message }}</div>
+{% endfor %}
+
 <div class="row h-100 mt-5">
   
   <!-- Content here -->
@@ -34,7 +38,7 @@
 
       <div class="form-group mb-4">
         <label for="input_icon">Feed Icon URL</label>
-        <input class="form-control" type="url" name="input_icon" value="" placeholder="Please enter the URL of your feed icon."/>
+        <input class="form-control" type="url" name="input_icon" value="" oninvalid="setCustomValidity('Please enter the complete URL of your icon image (including https:...)')" placeholder="Please enter the URL of your feed icon."/>
       </div>
       <input class="btn btn-primary btn-lg mt-2 mb-5" type="submit" value="Get custom feed URL" />
     </form>
