@@ -3,6 +3,7 @@ Das Code Projekt wurde im Modul *Programmierung 2* an der Fachhochschule Graubü
 
 **zum Projekt**: http://URL-EINGEBEN
 
+---
 
 ## Ausgangslage 
 Fangen wir mit den Basics an. Pyfeed macht Gebrauch von der Web-Technologie <a href="https://en.wikipedia.org/wiki/RSS" target="_blank">RSS</a> (RDF Site Summary oder Really Simple Syndication). Dabei handelt es sich um einen XML-basierten Web-Feed, der es Benutzern und Anwendungen ermöglicht, auf Aktualisierungen von Websites in einem standardisierten, computerlesbaren Format zuzugreifen. Tools wie der <a href="https://feedly.com/" target="_blank">Feedly</a>-Reader ermöglichen es Benutzern, die RSS-Feeds zu verfolgen, indem sie die Feeds vieler verschiedener Websites abonnieren oder zu einem "News-Aggregator" Ihrer Wahl hinzufügen.
