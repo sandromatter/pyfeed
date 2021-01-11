@@ -11,3 +11,7 @@ body {
 main {
     flex: 1;
 }
+
+.text-responsive {
+    font-size: calc(250% + 1vw + 1vh);
+  }

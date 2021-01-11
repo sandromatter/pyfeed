@@ -18,13 +18,17 @@ import os
 # ---------------------------------------------------------------------------------------
 # Global variables
 # ---------------------------------------------------------------------------------------
+
+# If run in local environment change variable to: 
+webapp_url = "http://127.0.0.1:5000/"
+# webapp_url = "https://pyfeed.herokuapp.com/"
+
 content_type_id = "Content-Type"
 channel = "channel"
 
 json_filename = "submitted-urls.json"
 file_path_json_filename = "backend/json/" + json_filename
 folder_path_xml = "backend/xml/"
-webapp_url = "http://127.0.0.1:5000/"
 
 session_key_xml_filename = "xml_filename"
 session_key_file_path_xml_filename = "file_path_xml_filename"
