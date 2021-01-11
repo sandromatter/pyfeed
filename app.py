@@ -21,6 +21,8 @@ app.config.from_object("config.DevelopmentConfig")
 # ---------------------------------------------------------------------------------------
 # Global variables
 # ---------------------------------------------------------------------------------------
+webapp_url = "http://127.0.0.1:5000/"
+
 method_get = "GET"
 method_post = "POST"
 
@@ -110,7 +112,7 @@ def optimize_feed():
         
         # Optimize feed URL
         if request.method == method_get:
-            return render_template("/pages/form__optimize-feed.html", title="Optimize", description="Choose which optimization you'd like to do on your URL.")
+            return render_template("/pages/form__optimize-feed.html", title="Optimize", description="Choose which optimization you'd like to do on your URL. Please leave the input empty if none is required.")
         # Therefore request method must be post
         else:
             feed_title = request.form["input_title"]
@@ -142,17 +144,19 @@ def optimize_feed():
 @app.route("/endpoint-url")
 def get_endpoint_url():
     if session[session_key_url_submitted] and session[session_key_feed_optimized]:
-        return render_template(page_path_get_endpoint_url, title="Get URL", description="Get your endpoint URL of your customized feed.")
+        xml_file_endpoint_url = webapp_url + "endpoint-url/" + session[session_key_xml_filename]
+        return render_template(page_path_get_endpoint_url, title="Get URL", description="Get the endpoint URL of your optimized feed.", endpoint_url = xml_file_endpoint_url)
     # Therefore no RSS feed URL is submitted and optimized
     else:
         flash("You can't get your endpoint URL without submitting a RSS feed URL first.", message_type_warning)
         return redirect(url_for(app_function_submit_feed))
 
 
+# Send optimized XML file to endpoint URL
 @app.route("/endpoint-url/<xml_filename>")
 def xml_file_endpoint_url(xml_filename):
     xml_filename = session[session_key_xml_filename]
-    file_path_xml_file = "backend/xml/"      
+    file_path_xml_file = "backend/xml/"
     return send_from_directory(file_path_xml_file, xml_filename, mimetype="text/xml")
 
 

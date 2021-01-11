@@ -8,9 +8,13 @@
   <div class="col-8">
     <h1 class="display-1 mb-3">{{title}}</h1>
     <p class="lead mb-4">{{description}}</p>
-    <pre><code>http://127.0.0.1:5000/endpoint-url/{{session["session_property_xml_filename"]}}</code></pre>
-    <button type="button" class="btn btn-primary btn-lg mt-2" id=xml_redirect onclick="replaceUrl()">Take me to my endpoint URL</button>
-  </div>
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title h4 mb-4">{{ endpoint_url }}</h2>
+        <p class="card-text">copy the feed URL above or …</p>
+        <a href="{{ endpoint_url }}" class="btn btn-primary btn-lg mt-2">… take me to my endpoint URL</a>
+      </div>
+    </div>
 
 </div>
 

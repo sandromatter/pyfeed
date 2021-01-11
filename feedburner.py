@@ -48,7 +48,7 @@ def check_feedurl_invalid(url):
         # Check if the requested URL is valid XML
         source = requests.head(url)
 
-        if source.status_code == 200:
+        if source.status_code == 200 or source.status_code == 301:
             if "application/rss+xml" in source.headers[content_type_id]:
                 return False
             elif "application/atom+xml" in source.headers[content_type_id]:
@@ -80,7 +80,7 @@ def check_image_invalid(input):
         # Check if the requested URL is an image
         source = requests.head(input)
 
-        if source.status_code == 200:
+        if source.status_code == 200 or source.status_code == 301:
             if "image/" in source.headers[content_type_id]:
                 return False
             else:
