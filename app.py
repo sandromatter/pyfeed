@@ -21,7 +21,10 @@ app.config.from_object("config.DevelopmentConfig")
 # ---------------------------------------------------------------------------------------
 # Global variables
 # ---------------------------------------------------------------------------------------
-webapp_url = "http://127.0.0.1:5000/"
+
+# If run in local environment change variable to: 
+# webapp_url = "http://127.0.0.1:5000/"
+webapp_url = "https://pyfeed.herokuapp.com/"
 
 method_get = "GET"
 method_post = "POST"
