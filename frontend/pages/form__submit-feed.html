@@ -10,7 +10,7 @@
   
   <!-- Content here -->
   <div class="col-lg-8 col-md-12">
-    <h1 class="display-1 mb-3">{{title}}</h1>
+    <h1 class="display-1 text-responsive mb-3">{{title}}</h1>
     <p class="lead mb-4">{{description}}</p>
     <form action="{{ url_for('submit_feed') }}" method="POST">
         <input class="form-control mb-4" type="url" oninvalid="setCustomValidity('Please enter the complete URL (including https:...)')" name="input_feedurl" value="" placeholder="Please enter the complete URL (including https://...) of your RSS feed to optimize."/>

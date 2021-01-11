@@ -5,8 +5,7 @@
 # ---------------------------------------------------------------------------------------
 # Import packages
 # ---------------------------------------------------------------------------------------
-from flask import Flask, render_template, request, redirect, url_for, send_file, flash, session
-from flask.helpers import send_from_directory
+from flask import Flask, render_template, request, redirect, url_for, flash, session, send_from_directory
 import feedburner
 
 
@@ -23,8 +22,8 @@ app.config.from_object("config.DevelopmentConfig")
 # ---------------------------------------------------------------------------------------
 
 # If run in local environment change variable to: 
-# webapp_url = "http://127.0.0.1:5000/"
-webapp_url = "https://pyfeed.herokuapp.com/"
+webapp_url = "http://127.0.0.1:5000/"
+# webapp_url = "https://pyfeed.herokuapp.com/"
 
 method_get = "GET"
 method_post = "POST"
