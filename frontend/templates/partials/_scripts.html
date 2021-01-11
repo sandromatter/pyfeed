@@ -1,0 +1,12 @@
+<!-- Optional Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha512-iceXjjbmB2rwoX93Ka6HAHP+B76IY1z0o3h+N1PeDtRSsyeetU3/0QKJqGyPJcX63zysNehggFwMC/bi7dvMig==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/3.2.0/js/bootstrap-colorpicker.js" integrity="sha512-7Jv+HtdsIV1+om+mz8Hxl1XuVUY7tdlsGWSnS4xIMVAkrmgxAZVA12KZlOkzCyCuWrGa6E0TYq9gKvS2V2JL7g==" crossorigin="anonymous"></script>
+
+<!-- Optional JS -->
+<script src="{{ url_for('static', filename='script.js') }}" async></script>
+<script>
+$(function() {
+  $('#feedColorPickerInput').colorpicker({});
+});
+</script>

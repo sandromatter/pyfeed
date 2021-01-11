@@ -1,0 +1,50 @@
+{% extends "/templates/main.html" %}
+
+{% block content %}
+
+{% for category, message in get_flashed_messages(with_categories=True) %}
+    <div class="alert alert-{{ category }} col-lg-8 col-md-12" role="alert">{{ message }}</div>
+{% endfor %}
+
+<div class="row h-100 mt-5">
+  
+  <!-- Content here -->
+  <div class="col-6">
+    <h1 class="display-1 mb-3">{{title}}</h1>
+    <p class="lead mb-4">{{description}}</p>
+    <form action="{{ url_for('optimize_feed') }}" method="POST">
+      
+      <div class="form-group mb-4">
+        <label for="input_title">Feed Title</label>
+        <input maxlength="40" id="feedTitleCounter" class="form-control" type="text" name="input_title" value="" placeholder="Please enter a feed title. If there is no input, the URL will be used."/>
+        <span id="wordCountTitle">0</span> Characters
+      </div>
+    
+      <div class="form-group mb-4">
+        <label for="input_description">Feed Description</label>
+        <textarea maxlength="140" id="feedDescriptionCounter" height="500" class="form-control" rows="3" name="input_description" placeholder="Please enter a feed description. If there is no input, the meta-description will be used."></textarea>
+        <span id="wordCountDescription">0</span> Characters
+      </div>
+
+      <div class="form-group mb-4">
+        <label for="input_analytics_ua">Google Analytics Property</label>
+        <input class="form-control" type="text" name="input_analytics_ua" value="" placeholder="Please enter a Google Analytics property. (UA-XXXXXX-X)"/>
+      </div>
+
+      <div class="form-group feedColorPicker demo mb-4">
+        <label for="input_accentColor">Feed Color Picker</label>
+        <input id="feedColorPickerInput" class="form-control input-lg" type="text" name="input_accentColor" placeholder="Please enter a color in HEX format. (#ffffff)" value="" />
+      </div>
+
+      <div class="form-group mb-4">
+        <label for="input_icon">Feed Icon URL</label>
+        <input class="form-control" type="url" name="input_icon" value="" oninvalid="setCustomValidity('Please enter the complete URL of your icon image (including https:...)')" placeholder="Please enter the URL of your feed icon."/>
+      </div>
+      <input class="btn btn-primary btn-lg mt-2 mb-5" type="submit" value="Get custom feed URL" />
+    </form>
+
+  </div>
+
+</div>
+
+{% endblock %}

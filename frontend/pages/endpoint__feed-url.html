@@ -1,0 +1,21 @@
+{% extends "/templates/main.html" %}
+
+{% block content %}
+
+<div class="row h-100 mt-5">
+  
+  <!-- Content here -->
+  <div class="col-8">
+    <h1 class="display-1 mb-3">{{title}}</h1>
+    <p class="lead mb-4">{{description}}</p>
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title h4 mb-4">{{ endpoint_url }}</h2>
+        <p class="card-text">copy the feed URL above or …</p>
+        <a href="{{ endpoint_url }}" class="btn btn-primary btn-lg mt-2">… take me to my endpoint URL</a>
+      </div>
+    </div>
+
+</div>
+
+{% endblock %}
