@@ -4,3 +4,4 @@
 .flaskenv
 Pipfile.lock
 Procfile
+._Procfile
