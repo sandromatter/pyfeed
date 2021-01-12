@@ -72,7 +72,7 @@ def index():
 # Introduction page
 @app.route("/introduction")
 def introduction():
-    return render_template(page_path_introduction, title="Introduction", description="An hommage to RSS feeds and the original google feedburner.")
+    return render_template(page_path_introduction, title="Introduction", description="An hommage to RSS feeds and the original Google Feedburner.")
 
 
 # Form submit feed URL page
