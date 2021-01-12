@@ -29,6 +29,9 @@ Als Datenspeicherung wird ein JSON sowie je ein XML-File verwendet. In der JSON-
 
 Die XML-Datei enthält den originalen RSS-Feed im XML-Format. Dieser wird optimisiert und mit weiteren Parametern und Metadaten ergänzt und überschrieben. Schliesslich wird die optimisierte Version des Files per Endpoint-URL dem Benutzer zur Verfügung gestellt.
 
+### Bugs
+Das Projekt enthält noch einige Bugs, welche nicht alle gefixt werden um trotzdem einen ersten MVP des Proof of Concepts zu erhalten. Die Fehler werden in erster Linie bei falschen Eingaben durch den User verursacht. Im Falle dass der User das Programm korrekt bedient, treten diese nicht ein. Die Bugs wurden als Issues im GitHub Repo festgehalten.
+
 ### Szenarien 
 Für das Projekt wurde der Programmfluss, bzw. die User Journey High-Level in einem Diagramm abgebildet.
 Wie erwähnt ist die App so konzipiert worden, dass eine falsche Bedienung grundsätzlich ausgeschlossen ist, da Eingaben überprüft werden und falsche Pfade verboten werden.
@@ -39,8 +42,8 @@ Wie erwähnt ist die App so konzipiert worden, dass eine falsche Bedienung grund
 Um das Projekt Pyfeed lokal starten zu können, sind verschiedene Abhängigkeiten vorausgesetzt. Die Requirements werden im Pipfile im Projektordner aufgeführt und können mit Hilfe von diesem File installiert werden. Das Projekt wurde mit dem Python packaging tool «pipenv» aufgesetzt.
 
 ```
-$ pip install pipenv
 $ cd /{{your_path_to_directory}}/PROG2/
+$ pip install pipenv
 $ pipenv install
 $ pipenv install --dev
 $ pipenv run flask run
