@@ -32,7 +32,7 @@ Die XML-Datei enthält den originalen RSS-Feed im XML-Format. Dieser wird optimi
 ### Bugs
 Das Projekt enthält noch einige Bugs, welche nicht alle gefixt werden um trotzdem einen ersten MVP des Proof of Concepts zu erhalten. Die Fehler werden in erster Linie bei falschen Eingaben durch den User verursacht. Im Falle dass der User das Programm korrekt bedient, treten diese nicht ein. Die Bugs wurden als Issues im GitHub Repo festgehalten.
 
-**zu den Issues**: <a href="https://github.com/sandromatter/PROG2/issues/" target="_blank">Issues</a>
+**zu den <a href="https://github.com/sandromatter/PROG2/issues/" target="_blank">Issues</a>**
 
 ### Szenarien 
 Für das Projekt wurde der Programmfluss, bzw. die User Journey High-Level in einem Diagramm abgebildet.
