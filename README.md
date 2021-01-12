@@ -42,6 +42,7 @@ Um das Projekt Pyfeed lokal starten zu können, sind verschiedene Abhängigkeite
 $ pip install pipenv
 $ cd /{{your_path_to_directory}}/PROG2/
 $ pipenv install
+$ pipenv install --dev
 $ pipenv run flask run
 ```
 
