@@ -1,5 +1,5 @@
 # Pyfeed  
-Das Code Projekt wurde im Modul «*Programmierung 2*» an der Fachhochschule Graubünden umgesetzt.   
+Das Code Projekt wurde im Modul *«Programmierung 2»* an der Fachhochschule Graubünden umgesetzt.   
 
 **zum Projekt**: https://pyfeed.herokuapp.com/
 
