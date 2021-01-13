@@ -1,0 +1,16 @@
+{% extends "/templates/main.html" %}
+
+{% block content %}
+
+<div class="row h-100 align-items-center text-center">
+
+  <!-- Content here -->
+  <div class="col-12">
+    <h1 class="display-1 text-responsive mb-3">Error 500: Internal server error 🤯</h1>
+    <p class="lead mb-4">Uh oh! An error occurred while connecting to the server. The requested page cannot be accessed.</p>
+    <button type="button" class="btn btn-primary btn-lg mb-2 mx-1" onclick="window.location.href='{{ url_for( 'index') }}';">Take me to the home page</button>
+  </div>
+    
+</div>
+
+{% endblock %}
