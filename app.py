@@ -14,7 +14,7 @@ import feedburner
 # ---------------------------------------------------------------------------------------
 app = Flask(__name__, template_folder="frontend",
             static_url_path="/frontend/static", static_folder="frontend/static")
-app.config.from_object("config.ProductionConfig")
+app.config.from_object("config.DevelopmentConfig")
 
 
 # ---------------------------------------------------------------------------------------
@@ -22,8 +22,8 @@ app.config.from_object("config.ProductionConfig")
 # ---------------------------------------------------------------------------------------
 
 # If run in local environment change variable to: 
-# webapp_url = "http://127.0.0.1:5000/"
-webapp_url = "https://pyfeed.herokuapp.com/"
+webapp_url = "http://127.0.0.1:5000/"
+# webapp_url = "https://pyfeed.herokuapp.com/"
 
 method_get = "GET"
 method_post = "POST"
@@ -67,6 +67,18 @@ def index():
     session[session_key_url_submitted] = False
     session[session_key_feed_optimized] = False
     return render_template(page_path_index, title="Pyfeed", description="The modern 2020 python feedburner.")
+
+
+# Custom error page for 404
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template("/pages/404.html"), 404
+
+
+# Custom error page for 500
+@app.errorhandler(500)
+def internal_error(error):
+    return render_template("/pages/500.html"),500
 
 
 # Introduction page
