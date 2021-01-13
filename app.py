@@ -14,7 +14,7 @@ import feedburner
 # ---------------------------------------------------------------------------------------
 app = Flask(__name__, template_folder="frontend",
             static_url_path="/frontend/static", static_folder="frontend/static")
-app.config.from_object("config.ProductionConfig")
+app.config.from_object("config.DevelopmentConfig")
 
 
 # ---------------------------------------------------------------------------------------
@@ -22,8 +22,8 @@ app.config.from_object("config.ProductionConfig")
 # ---------------------------------------------------------------------------------------
 
 # If run in local environment change variable to: 
-# webapp_url = "http://127.0.0.1:5000/"
-webapp_url = "https://pyfeed.herokuapp.com/"
+webapp_url = "http://127.0.0.1:5000/"
+# webapp_url = "https://pyfeed.herokuapp.com/"
 
 method_get = "GET"
 method_post = "POST"

@@ -20,8 +20,8 @@ import os
 # ---------------------------------------------------------------------------------------
 
 # If run in local environment change variable to: 
-# webapp_url = "http://127.0.0.1:5000/"
-webapp_url = "https://pyfeed.herokuapp.com/"
+webapp_url = "http://127.0.0.1:5000/"
+# webapp_url = "https://pyfeed.herokuapp.com/"
 
 content_type_id = "Content-Type"
 channel = "channel"
