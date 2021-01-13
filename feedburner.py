@@ -44,32 +44,36 @@ session_key_stripped_url = "stripped_url"
 def check_input_empty(input):
     if input == "":
         return True
+    else:
+        return False
 
 
 # Check if URL is not content-type RSS
 def check_feedurl_invalid(url):
-    if check_input_empty(url) != True:
+    if not check_input_empty(url):
         # Check if the requested URL is valid XML
-        source = requests.head(url)
+        try:
+            source = requests.head(url)
+            if source.status_code == 200 or source.status_code == 301:
+                if "application/rss+xml" in source.headers[content_type_id]:
+                    return False
+                elif "application/atom+xml" in source.headers[content_type_id]:
+                    return False
+                elif "application/xml" in source.headers[content_type_id]:
+                    return False
+                elif "text/xml" in source.headers[content_type_id]:
+                    return False
 
-        if source.status_code == 200 or source.status_code == 301:
-            if "application/rss+xml" in source.headers[content_type_id]:
-                return False
-            elif "application/atom+xml" in source.headers[content_type_id]:
-                return False
-            elif "application/xml" in source.headers[content_type_id]:
-                return False
-            elif "text/xml" in source.headers[content_type_id]:
-                return False
-            else:
-                return True
-        else:
-            return True
+        except requests.exceptions.ConnectionError:
+            None
+
+        # Return True for invalid URL    
+        return True
 
 
 # Check if Google Analytics UA is invalid
 def check_analytics_invalid(input):
-    if check_input_empty(input) != True:
+    if not check_input_empty(input):
         if "UA-" in input:
             return False
         elif "ua-" in input:
@@ -79,18 +83,20 @@ def check_analytics_invalid(input):
 
 
 # Check if URL is not content-type image
-def check_image_invalid(input):
-    if check_input_empty(input) != True:
-        # Check if the requested URL is an image
-        source = requests.head(input)
+def check_image_invalid(url):
+    if not check_input_empty(url):
+        # Check if the requested URL is valid XML
+        try:
+            source = requests.head(url)
+            if source.status_code == 200 or source.status_code == 301:
+                if "image/" in source.headers[content_type_id]:
+                    return False
 
-        if source.status_code == 200 or source.status_code == 301:
-            if "image/" in source.headers[content_type_id]:
-                return False
-            else:
-                return True
-        else:
-            return True
+        except requests.exceptions.ConnectionError:
+            None
+
+        # Return True for invalid URL    
+        return True
 
 
 # Remove www. from URL to prevent double entries in json
@@ -185,66 +191,62 @@ def optimize_xml_file(feed_title, feed_description, feed_analytics_ua, feed_acce
     parser = etree.XMLParser(remove_blank_text = True)
     tree = etree.parse(session[session_key_file_path_xml_filename], parser)
     root = tree.getroot()
-    inputs = [feed_title, feed_description, feed_analytics_ua, feed_accentColor, feed_icon]
 
-    # For loop to check whether a imput is empty. Adds just inputs which aren't empty.
-    for i in inputs:
+    if not check_input_empty(feed_title):
+        # Replace title
+        title = root.xpath("//rss/channel/title")
+        if title:
+            # Replaces <title> text
+            title[0].text = feed_title
 
-        if i == feed_title and check_input_empty(i) != True:
-            # Replace title
-            title = root.xpath("//rss/channel/title")
-            if title:
-                # Replaces <title> text
-                title[0].text = feed_title
+    if not check_input_empty(feed_description):
+        # Replace description
+        description = root.xpath("//rss/channel/description")
+        if description:
+            # Replaces <description> text
+            description[0].text = feed_description
     
-        elif i == feed_description and check_input_empty(i) != True:
-            # Replace description
-            description = root.xpath("//rss/channel/description")
-            if description:
-                # Replaces <description> text
-                description[0].text = feed_description
-        
-        elif i == feed_analytics_ua and check_input_empty(i) != True:
-            # Add webfeeds:analytics plus additional arguments
-            ns = "http://webfeeds.org/rss/1.0"
-            etree.register_namespace("webfeeds", ns)
-            etree.Element("rss")
-            find_channel = tree.find(channel)
-            webfeeds = etree.SubElement(find_channel, "{http://webfeeds.org/rss/1.0}analytics")
-            find_channel.insert(0, webfeeds)
-            ns = {"webfeeds": "http://webfeeds.org/rss/1.0"}
-            webfeeds_analytics = root.xpath("//rss/channel/webfeeds:analytics", namespaces = ns)
-            for el in webfeeds_analytics:
-                el.attrib["id"] = feed_analytics_ua
-                el.attrib["engine"] = "GoogleAnalytics"
+    if not check_input_empty(feed_analytics_ua):
+        # Add webfeeds:analytics plus additional arguments
+        ns = "http://webfeeds.org/rss/1.0"
+        etree.register_namespace("webfeeds", ns)
+        etree.Element("rss")
+        find_channel = tree.find(channel)
+        webfeeds = etree.SubElement(find_channel, "{http://webfeeds.org/rss/1.0}analytics")
+        find_channel.insert(0, webfeeds)
+        ns = {"webfeeds": "http://webfeeds.org/rss/1.0"}
+        webfeeds_analytics = root.xpath("//rss/channel/webfeeds:analytics", namespaces = ns)
+        for el in webfeeds_analytics:
+            el.attrib["id"] = feed_analytics_ua
+            el.attrib["engine"] = "GoogleAnalytics"
 
-        elif i == feed_accentColor and check_input_empty(i) != True:
-            # Add webfeeds:accentColor plus additional arguments
-            ns = "http://webfeeds.org/rss/1.0"
-            etree.register_namespace("webfeeds", ns)
-            etree.Element("rss")
-            find_channel = tree.find(channel)
-            webfeeds = etree.SubElement(find_channel, "{http://webfeeds.org/rss/1.0}accentColor")
-            find_channel.insert(0, webfeeds)
-            ns = {"webfeeds": "http://webfeeds.org/rss/1.0"}
-            webfeeds_accentColor = root.xpath("//rss/channel/webfeeds:accentColor", namespaces = ns)
-            if webfeeds_accentColor:
-                # Replaces <webfeeds:accentColor> text
-                webfeeds_accentColor[0].text = feed_accentColor
+    if not check_input_empty(feed_accentColor):
+        # Add webfeeds:accentColor plus additional arguments
+        ns = "http://webfeeds.org/rss/1.0"
+        etree.register_namespace("webfeeds", ns)
+        etree.Element("rss")
+        find_channel = tree.find(channel)
+        webfeeds = etree.SubElement(find_channel, "{http://webfeeds.org/rss/1.0}accentColor")
+        find_channel.insert(0, webfeeds)
+        ns = {"webfeeds": "http://webfeeds.org/rss/1.0"}
+        webfeeds_accentColor = root.xpath("//rss/channel/webfeeds:accentColor", namespaces = ns)
+        if webfeeds_accentColor:
+            # Replaces <webfeeds:accentColor> text
+            webfeeds_accentColor[0].text = feed_accentColor
 
-        elif i == feed_icon and check_input_empty(i) != True:
-            # Add webfeeds:icon plus additional arguments
-            ns = "http://webfeeds.org/rss/1.0"
-            etree.register_namespace("webfeeds", ns)
-            etree.Element("rss")
-            find_channel = tree.find(channel)
-            webfeeds = etree.SubElement(find_channel, "{http://webfeeds.org/rss/1.0}icon")
-            find_channel.insert(0, webfeeds)
-            ns = {"webfeeds": "http://webfeeds.org/rss/1.0"}
-            webfeeds_icon = root.xpath("//rss/channel/webfeeds:icon", namespaces = ns)
-            if webfeeds_icon:
-                # Replaces <webfeeds:icon> text
-                webfeeds_icon[0].text = feed_icon
+    if not check_input_empty(feed_icon):
+        # Add webfeeds:icon plus additional arguments
+        ns = "http://webfeeds.org/rss/1.0"
+        etree.register_namespace("webfeeds", ns)
+        etree.Element("rss")
+        find_channel = tree.find(channel)
+        webfeeds = etree.SubElement(find_channel, "{http://webfeeds.org/rss/1.0}icon")
+        find_channel.insert(0, webfeeds)
+        ns = {"webfeeds": "http://webfeeds.org/rss/1.0"}
+        webfeeds_icon = root.xpath("//rss/channel/webfeeds:icon", namespaces = ns)
+        if webfeeds_icon:
+            # Replaces <webfeeds:icon> text
+            webfeeds_icon[0].text = feed_icon
 
     # Add webfeeds:related plus additional arguments
     ns = "http://webfeeds.org/rss/1.0"
@@ -265,7 +267,5 @@ def optimize_xml_file(feed_title, feed_description, feed_analytics_ua, feed_acce
     for el in atom_link:
         el.attrib["href"] = webapp_url + "endpoint-url/" + session[session_key_xml_filename]
 
-    # Save XML file with pretty print
-    def pretty_print_write_xml(xml):
-        tree.write(xml, encoding="UTF-8", pretty_print=True, xml_declaration=True)
-    pretty_print_write_xml(session[session_key_file_path_xml_filename])
+    # Write optimized feed XML file 
+    tree.write(session[session_key_file_path_xml_filename], encoding="UTF-8", pretty_print=True, xml_declaration=True)

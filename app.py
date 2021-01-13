@@ -64,15 +64,15 @@ page_path_get_endpoint_url = "/pages/endpoint__feed-url.html"
 # Home page
 @app.route("/")
 def index():
-    url_submitted = False
-    session[session_key_url_submitted] = url_submitted
+    session[session_key_url_submitted] = False
+    session[session_key_feed_optimized] = False
     return render_template(page_path_index, title="Pyfeed", description="The modern 2020 python feedburner.")
 
 
 # Introduction page
 @app.route("/introduction")
 def introduction():
-    return render_template(page_path_introduction, title="Introduction", description="An hommage to RSS feeds and the original google feedburner.")
+    return render_template(page_path_introduction, title="Introduction", description="An hommage to RSS feeds and the original Google Feedburner.")
 
 
 # Form submit feed URL page
@@ -98,8 +98,7 @@ def submit_feed():
             xml_filename = feedburner.save_xml(feedurl)
             session[session_key_xml_filename] = xml_filename
             feedburner.save_json(stripped_feedurl, xml_filename)
-            url_submitted = True
-            session[session_key_url_submitted] = url_submitted
+            session[session_key_url_submitted] = True
             return redirect(url_for(app_function_optimize_feed))
 
     # Therefore request method must be get
@@ -132,8 +131,7 @@ def optimize_feed():
                 return redirect(url_for(app_function_optimize_feed))
             else:
                 feedburner.optimize_xml_file(feed_title, feed_description, feed_analytics_ua, feed_accentColor, feed_icon)
-                feed_optimized = True
-                session[session_key_feed_optimized] = feed_optimized
+                session[session_key_feed_optimized] = True
                 return redirect(url_for("get_endpoint_url"))
             
     # Therefore no RSS feed URL is submitted
@@ -145,7 +143,7 @@ def optimize_feed():
 # Form enter custom URL
 @app.route("/endpoint-url")
 def get_endpoint_url():
-    if session[session_key_url_submitted] and session[session_key_feed_optimized]:
+    if session[session_key_feed_optimized]:
         xml_file_endpoint_url = webapp_url + "endpoint-url/" + session[session_key_xml_filename]
         return render_template(page_path_get_endpoint_url, title="Get URL", description="Get the endpoint URL of your optimized feed.", endpoint_url = xml_file_endpoint_url)
     # Therefore no RSS feed URL is submitted and optimized
@@ -157,7 +155,6 @@ def get_endpoint_url():
 # Send optimized XML file to endpoint URL
 @app.route("/endpoint-url/<xml_filename>")
 def xml_file_endpoint_url(xml_filename):
-    xml_filename = session[session_key_xml_filename]
     file_path_xml_file = "backend/xml/"
     return send_from_directory(file_path_xml_file, xml_filename, mimetype="text/xml")
 

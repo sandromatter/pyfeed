@@ -5,13 +5,12 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
+python-dotenv = "*"
 
 [packages]
 flask = "*"
-python-dotenv = "*"
 requests = "*"
 lxml = "*"
-gunicorn = "*"
 
 [requires]
 python_version = "3.8"
