@@ -69,6 +69,18 @@ def index():
     return render_template(page_path_index, title="Pyfeed", description="The modern 2020 python feedburner.")
 
 
+# Custom error page for 404
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template("/pages/404.html"), 404
+
+
+# Custom error page for 500
+@app.errorhandler(500)
+def internal_error(error):
+    return render_template("/pages/500.html"),500
+
+
 # Introduction page
 @app.route("/introduction")
 def introduction():
