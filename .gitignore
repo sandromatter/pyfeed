@@ -1,5 +1,2 @@
 /.vscode
 /__pycache__
-.env
-.flaskenv
-Pipfile.lock
